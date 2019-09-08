@@ -19,6 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polls/', include('polls.urls', namespace="polls"))
+    path('polls/', include('polls.urls', namespace="polls")),
+    path('sign/', include('sign.urls'))
     # include允许引用其他url
 ]

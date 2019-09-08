@@ -1,0 +1,62 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.navbar-default .navbar-nav li.active a{
+  background-color: #337ab7;
+  color: #fff;
+}
+.navbar-default .navbar-nav li.active a:hover{
+  background-color: #337ab7;
+  color: #fff;
+}
+.navbar-default .navbar-nav li a:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+.navbar-default .navbar-nav .navbar-btn {
+  margin-left: 6px;
+}
+.jumbotron {
+  margin: auto 200px;
+  padding: 20px;
+}
+.jumbotron .input-group {
+  #border: 1px solid black;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.jumbotron .input-group .form-control {
+  border-radius: 4px;
+  width: 89%;
+}
+.jumbotron .input-group .btn-lg {
+  width: 10%;
+  float: right;
+}
+.jumbotron .container {
+  #border: 1px solid black;
+  width: 100%;
+  padding: 0px;
+}
+.jumbotron .container .row .col-md-3 {
+  margin-left: 0px;
+}
+.jumbotron .container .row .col-md-9 {
+  margin-right: 0px;
+  margin-top: 1px;
+}
+.jumbotron .container .row .btom {
+  float: right;
+}
+.popup_window {
+  border: 1px solid black;
+  width: 810px;
+  height: 100px;
+  margin-top: -300px;
+}
