@@ -44,6 +44,7 @@ def login(request):
         else:
             return render(request, "login.html", {"hint":"username or password incorrect"})
 
+
 def logout(request):
     """
     退出登录
@@ -65,7 +66,6 @@ def manage(request):
     return render(request, "manage.html",{"welcome_user":cookie_user, "events":event_list})
 
 
-
 @login_required # 校验用户是否登录
 def search_event(request):
     """
@@ -82,8 +82,6 @@ def search_event(request):
     else:
         response = HttpResponseRedirect("/sign/manage")
         return response
-
-
 
 
 @login_required # 校验用户是否登录
@@ -134,13 +132,6 @@ def qiandao_action(request,event_id):
             return render(request,"qiandao.html", {"event":event, "hint":"手机号已签到", "guest_data":guest_data, "sign_data":sign_data})
 
 
-
-
-
-
-
-
-
 @login_required # 校验用户是否登录
 def guest(request):
     """
@@ -152,9 +143,6 @@ def guest(request):
     guest_list = Guest.objects.all()
     print(guest_list)
     return render(request, "guest_manage.html",{"welcome_user":cookie_user, "guests":guest_list})
-
-
-
 
 
 @login_required # 校验用户是否登录
